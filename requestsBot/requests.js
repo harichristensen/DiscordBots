@@ -1,4 +1,5 @@
 function requests () {
+const payments = require("../paymentsBot/payments")
 const keepAlive = require("../server") // import keepAlive from server.js
 const Discord = require("discord.js") // import discord
 // Create discord bot instance and set intents
@@ -47,9 +48,16 @@ client.on("messageCreate", msg => {
       // Need help
       if (msg.content.toLowerCase() === 'help') client.channels.cache.get(`928987939554332672`).send(`<@&938722157867991080> ${msg.author} needs help!!
       React to/delete this message if it taken care of.`)
+      // payment
+      if (msg.content.toLowerCase() === 'payment') {
+        msg.author.send("Starting payment")
+        new payments()
+      }
   }
 })
-
+function sendMessage(msg, val) {
+  msg.author.send(val);
+}
 // Loop to send intervalled message to all channels in the server
 function messageLoop () {
   var interval = setInterval (function() {

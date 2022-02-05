@@ -4,8 +4,16 @@
       {
         "id": "bfc93492-d305-4043-abb3-26764e4695db",
         "line": 5,
-        "version": 43,
+        "version": 67,
         "index": 373
+      }
+    ],
+    "paymentsBot/payments.js": [
+      {
+        "id": "90caf0d8-aa2e-43e9-b7fd-3e88c120deb2",
+        "line": 8,
+        "version": 782,
+        "index": 159
       }
     ]
   }
