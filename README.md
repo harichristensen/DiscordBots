@@ -1,13 +1,18 @@
 Purpose:  
-DiscordBots in an Node.js script that allows someone in a discord server to pay to advertise in the server.
-It is a collection of bots coded with Node.js that uses Discord.js and PayPal integration to take an advertisement order requests, create a payment through Paypal, detect if it was paid, and then send the message of their advertisement into the server.
+DiscordBots is a Node.js script that allows someone in a discord server to pay to advertise in the server.  
+A bot will interact with a user, provide a payment link, and give the user proper permissions once payment completion is detected.  
+React website hosted by Heroku, shows different product packages, accepts payment using PayPal, and stores information in MongoDB database  
+Coded with Node.js using Replit, React for the website, PayPal API for payment source Discord.js for bot scripting, MongoDB for cloud database  
+Website: https://disc-site.herokuapp.com/ (might be slow for first connection as it’s free hosting)
 
 
 Done:  
-Discord bot that provides advertisement options to a member of the 
+Discord bot that provides advertisement options to a member of the discord server
+Created Point of Sale website using React
+
   
 TODO:  
-Integrate Paypal to create and accept payments  
+Send payment information to cloud database
 Bot to send advertisement message  
 Bot to send announcements  
 Bot to track payroll for server staff
